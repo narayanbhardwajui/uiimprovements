@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.notifications {
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    background: gray;
+    color: #fff;
+    position:relative;
+    margin-block:10px;
+}
+.notifications:after {
+    --size: 20px;
+    /* data attribute */
+    content:attr(data-count);
+    position:absolute;
+    background: red;
+    display:grid;
+    place-content:center;
+    width:var(--size);
+    height:var(--size);
+    border-radius: calc(var(--size) / 2);
+    top: calc(var(--size) / -2);
+    right: calc(var(--size) / -2);
+    font-size:calc(var(--size) / 2);
+}
