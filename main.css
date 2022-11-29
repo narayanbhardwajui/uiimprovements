@@ -1,6 +1,4 @@
 * {
-    margin:0;
-    padding:0;
     box-sizing:border-box;
 }
 
@@ -28,4 +26,21 @@
     top: calc(var(--size) / -2);
     right: calc(var(--size) / -2);
     font-size:calc(var(--size) / 2);
+}
+
+.tape {
+    width: var(--size);
+    transform: rotate(var(--angle));
+}
+
+.avatar {
+    width: calc(var(--size, 32) * 1px);
+    height: calc(var(--size, 32) * 1px);
+    background: lightgray;
+    border-radius: calc(calc(var(--size,9999) / 2) * 1px);
+    display:grid;
+    place-content:center;
+}
+.avatar-medium {
+    --size: 64;
 }
