@@ -44,3 +44,9 @@
 .avatar-medium {
     --size: 64;
 }
+
+.border-radius-hack {
+    border-radius: 100vmax;
+    padding:8px 16px;
+    border:1px solid #000;
+}
